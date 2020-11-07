@@ -1,0 +1,19 @@
+# reference - hacker rank 30 days coding challenge problem 
+r=int(input())
+
+for i in range(r):
+    leven=[]
+    lodd=[]
+    s=input("")
+    x=len(s)
+    for j in range(0,x):
+        if(j%2==0):
+            leven.append(s[j])
+        else:
+            lodd.append(s[j])
+
+    listToStreven = ''.join([str(elem) for elem in leven]) #converting or joining elements in list leven into 1 string
+    listToStrodd = ''.join([str(elem) for elem in lodd])  #converting or joining elements in list lodd into 1 string 
+    print(f'{listToStreven} {listToStrodd}')
+        
+        
